@@ -9,3 +9,13 @@
 2022-06-10 13:25:49.951  INFO 812 --- [main] c.b.u.u.UserRegistrationApplication      : The following 1 profile is active: "dev"
 2022-06-10 13:25:54.744  WARN 812 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2022-06-10 13:25:55.357  INFO 812 --- [main] c.b.u.u.UserRegistrationApplication      : Started UserRegistrationApplication in 6.031 seconds (JVM running for 7.147)
+2022-06-10 15:55:29.147  INFO 12156 --- [main] c.b.u.u.UserRegistrationApplication      : Starting UserRegistrationApplication using Java 17.0.2 on DESKTOP-4E0R7JF with PID 12156 (C:\Users\Nagu\IdeaProjects\user-registration\target\classes started by Nagu in C:\Users\Nagu\IdeaProjects\user-registration)
+2022-06-10 15:55:29.152 DEBUG 12156 --- [main] c.b.u.u.UserRegistrationApplication      : Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-06-10 15:55:29.152  INFO 12156 --- [main] c.b.u.u.UserRegistrationApplication      : The following 1 profile is active: "dev"
+2022-06-10 15:55:40.037  WARN 12156 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-10 15:55:40.697  INFO 12156 --- [main] c.b.u.u.UserRegistrationApplication      : Started UserRegistrationApplication in 12.767 seconds (JVM running for 15.776)
+2022-06-10 16:42:11.177  INFO 15348 --- [main] c.b.u.u.UserRegistrationApplication      : Starting UserRegistrationApplication using Java 17.0.2 on DESKTOP-4E0R7JF with PID 15348 (C:\Users\Nagu\IdeaProjects\user-registration\target\classes started by Nagu in C:\Users\Nagu\IdeaProjects\user-registration)
+2022-06-10 16:42:11.182 DEBUG 15348 --- [main] c.b.u.u.UserRegistrationApplication      : Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-06-10 16:42:11.183  INFO 15348 --- [main] c.b.u.u.UserRegistrationApplication      : The following 1 profile is active: "dev"
+2022-06-10 16:42:16.145  WARN 15348 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-10 16:42:16.847  INFO 15348 --- [main] c.b.u.u.UserRegistrationApplication      : Started UserRegistrationApplication in 6.288 seconds (JVM running for 7.611)
