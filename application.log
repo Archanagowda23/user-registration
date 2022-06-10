@@ -1,0 +1,11 @@
+2022-06-10 13:24:33.113  INFO 12132 --- [main] c.b.u.u.UserRegistrationApplication      : Starting UserRegistrationApplication using Java 17.0.2 on DESKTOP-4E0R7JF with PID 12132 (C:\Users\Nagu\IdeaProjects\user-registration\target\classes started by Nagu in C:\Users\Nagu\IdeaProjects\user-registration)
+2022-06-10 13:24:33.172 DEBUG 12132 --- [main] c.b.u.u.UserRegistrationApplication      : Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-06-10 13:24:33.174  INFO 12132 --- [main] c.b.u.u.UserRegistrationApplication      : The following 1 profile is active: "dev"
+2022-06-10 13:24:45.363  WARN 12132 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-06-10 13:24:49.549  WARN 12132 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-10 13:24:51.487  INFO 12132 --- [main] c.b.u.u.UserRegistrationApplication      : Started UserRegistrationApplication in 21.964 seconds (JVM running for 28.035)
+2022-06-10 13:25:49.946  INFO 812 --- [main] c.b.u.u.UserRegistrationApplication      : Starting UserRegistrationApplication using Java 17.0.2 on DESKTOP-4E0R7JF with PID 812 (C:\Users\Nagu\IdeaProjects\user-registration\target\classes started by Nagu in C:\Users\Nagu\IdeaProjects\user-registration)
+2022-06-10 13:25:49.950 DEBUG 812 --- [main] c.b.u.u.UserRegistrationApplication      : Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-06-10 13:25:49.951  INFO 812 --- [main] c.b.u.u.UserRegistrationApplication      : The following 1 profile is active: "dev"
+2022-06-10 13:25:54.744  WARN 812 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-10 13:25:55.357  INFO 812 --- [main] c.b.u.u.UserRegistrationApplication      : Started UserRegistrationApplication in 6.031 seconds (JVM running for 7.147)
