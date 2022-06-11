@@ -7,10 +7,7 @@ import com.bridgelabz.userregistration.userregistration.service.UserServiceI;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.List;
@@ -26,15 +23,36 @@ public class UserController {
     public ResponseEntity<ResponseDTO> getUserInfo(){
         List<UserData> userDataList = null;
         userDataList= userServiceI.getUserInfo();
-        ResponseDTO responseDTO = new ResponseDTO("Get call Successfull","Hello message");
+        ResponseDTO responseDTO = new ResponseDTO("Getting User Info ", userDataList);
         return new ResponseEntity<ResponseDTO>(responseDTO, HttpStatus.OK);
     }
 
-    @RequestMapping("/addUserInfo")
-    public ResponseEntity<ResponseDTO> addUserInfo(@Valid @RequestBody UserDTO userDTO){
+    @PostMapping("/addUserInfo")
+    public ResponseEntity<ResponseDTO> addUserInfo(@Valid @RequestBody UserDTO userDTO) {
         UserData userData = null;
-        userData=userServiceI.addUser(userDTO);
-        ResponseDTO responseDTO = new ResponseDTO("Get call Successfull.",userData);
+        userData = userServiceI.addUser(userDTO);
+        ResponseDTO responseDTO = new ResponseDTO("User Added Successfully.", userData);
+        return new ResponseEntity<ResponseDTO>(responseDTO, HttpStatus.CREATED);
+    }
+
+    @PutMapping("/updateUserInfo/{userId}")
+    public ResponseEntity<ResponseDTO> updateUserInfo(@PathVariable int userId, @Valid @RequestBody UserDTO userDTO){
+        UserData userData = null;
+        userData = userServiceI.updateUserInfo(userId, userDTO);
+        ResponseDTO responseDTO = new ResponseDTO("User Data Updated Successfully",userData);
+        return new ResponseEntity<ResponseDTO>(responseDTO,HttpStatus.OK);
+    }
+    @DeleteMapping("/deleteUserInfo/{userId}")
+    public ResponseEntity<ResponseDTO> deleteUserInfo(@PathVariable int userId){
+        userServiceI.deleteUserInfo(userId);
+        ResponseDTO responseDTO = new ResponseDTO("User Deleted Successfully UserId:- ",userId);
+        return new ResponseEntity<ResponseDTO>(responseDTO, HttpStatus.OK);
+    }
+    @GetMapping("/getUserInfo/{userId}")
+    public ResponseEntity<ResponseDTO> getUserInfoById(@PathVariable int userId){
+        UserData userData = null;
+        userData = userServiceI.getUserInfoById(userId);
+        ResponseDTO responseDTO = new ResponseDTO("Getting User Info For Id :- ",userData);
         return new ResponseEntity<ResponseDTO>(responseDTO, HttpStatus.OK);
     }
 }

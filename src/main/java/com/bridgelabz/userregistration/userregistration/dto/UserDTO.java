@@ -14,9 +14,9 @@ public class UserDTO {
     @NotEmpty(message = "First Name cannot be Empty")
     public String firstName;
 
-    @Pattern(regexp ="^[a-z0-9]{1,}[.]{0,1}[a-zA-Z0-9]{0,}+@[a-zA-Z0-9]+.[a-zA-Z]{2,3}[.]{0,1}[a-zA-Z]{0,2}$"
-            ,message = "Email Address is Invalid!, Please Enter Valid Email Address.")
-    @NotEmpty(message = "Email Address cannot be Empty")
+    @Pattern(regexp ="^[A-Z]{1}[a-z]{2,}$"
+            ,message = "lastname is Invalid!, Please Enter Valid lastname.")
+    @NotEmpty(message = "lastname cannot be Empty")
     public String lastName;
 
     @Pattern(regexp ="^[a-z0-9]{1,}[.]{0,1}[a-zA-Z0-9]{0,}+@[a-zA-Z0-9]+.[a-zA-Z]{2,3}[.]{0,1}[a-zA-Z]{0,2}$"
