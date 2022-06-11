@@ -1,7 +1,6 @@
 package com.bridgelabz.userregistration.userregistration.dto;
 
 import lombok.Data;
-import org.hibernate.query.criteria.internal.predicate.PredicateImplementor;
 
 @Data
 public class ResponseDTO {

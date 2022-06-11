@@ -1,19 +1,24 @@
 package com.bridgelabz.userregistration.userregistration;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
+@Slf4j
 @EnableSwagger2
 @SpringBootApplication
 public class UserRegistrationApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(UserRegistrationApplication.class, args);
+        ApplicationContext context = SpringApplication.run(UserRegistrationApplication.class, args);
+        log.info("  User Registration Jwt App Started", context.getEnvironment().getProperty("environment"));
+        log.info("User Registration Jwt DB User is {} ", context.getEnvironment().getProperty("spring.datasource.username"));
     }
     @Bean
     public Docket productApi() {

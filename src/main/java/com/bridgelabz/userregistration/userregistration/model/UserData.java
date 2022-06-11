@@ -1,10 +1,12 @@
 package com.bridgelabz.userregistration.userregistration.model;
 
 import com.bridgelabz.userregistration.userregistration.dto.UserDTO;
+import lombok.Data;
 
 import javax.persistence.*;
 
 @Entity
+@Data
 @Table(name="User_Data")
 public class UserData {
 
